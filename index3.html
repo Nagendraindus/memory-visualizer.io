@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Memory Manager</title>
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+    <div class="input-container">
+        <h1>Virtual Memory Visualizer</h1>
+        <label for="pages">Page sequence:</label>
+        <input type="text" id="pages">
+        <label for="frames">Number of frames:</label>
+        <input type="number" id="frames">
+        <label for="algorithm">Choose an algorithm:</label>
+        <select id="algorithm">
+            <option value="FIFO">FIFO</option>
+            <option value="LRU">LRU</option>
+            <option value="MRU">MRU</option>
+        </select>
+        <button onclick="runSimulation()">Run Simulation</button>
+    </div>
+    <div id="result"></div>
+   
+    
+
+    <script src="script3.js"></script>
+</body>
+</html>
